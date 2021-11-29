@@ -1,0 +1,26 @@
+{
+  "name": "masajista-z",
+  "version": "1.0.0",
+  "description": "Pagina web personal Masajista Z",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss assets/scss/main.scss assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "build-bs": "node-sass --include-path scss assets/scss/bootstrap/bootstrap.scss assets/css/bootstrap.css",
+    "watch-bs": "nodemon -e scss -x \"npm     run build-bs\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresNazzari/masajista-z.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresNazzari/masajista-z/issues"
+  },
+  "homepage": "https://github.com/AndresNazzari/masajista-z#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
