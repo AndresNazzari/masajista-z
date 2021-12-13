@@ -1,3 +1,50 @@
 * {
-  font-family: 'Roboto', sans-serif;
-}
+  font-family: 'Roboto', sans-serif; }
+
+.cards {
+  border-radius: 10px; }
+
+.cards:hover {
+  transform: scale(1.05); }
+
+.bloque {
+  background: yellow;
+  height: 395px;
+  width: 370px;
+  margin-top: -25px;
+  margin-left: -30px; }
+  @media screen and (min-width: 992px) {
+    .bloque {
+      height: 445px;
+      width: 400px; } }
+  @media screen and (min-width: 1200px) {
+    .bloque {
+      height: 545px;
+      width: 530px; } }
+
+.foto_perfil {
+  height: 400px;
+  width: 340px; }
+  @media screen and (min-width: 992px) {
+    .foto_perfil {
+      height: 450px;
+      width: 370px; } }
+  @media screen and (min-width: 1200px) {
+    .foto_perfil {
+      height: 550px;
+      width: 500px; } }
+
+.perfil {
+  height: 425px; }
+  @media screen and (min-width: 992px) {
+    .perfil {
+      height: 480px; } }
+  @media screen and (min-width: 1200px) {
+    .perfil {
+      height: 580px; } }
+
+.justifyContent {
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .justifyContent {
+      justify-content: end; } }
