@@ -21,6 +21,9 @@ nav {
   nav a {
     color: black !important; }
 
+.navbar-brand img {
+  width: 2rem; }
+
 .heroe {
   background-image: url("../img/portada_recortada.jpg");
   height: 100%;
