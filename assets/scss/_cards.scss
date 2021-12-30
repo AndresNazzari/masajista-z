@@ -1,4 +1,59 @@
+#tratamientos {
+  background-color: $paleta3;
+}
+
+.tratamientos__titulo {
+  font-family: Frank Ruhl Libre;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2rem;
+  letter-spacing: 0.079em;
+  color: #595351;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 3rem;
+    margin-top: 5rem;
+  }
+}
+
+.tratamientos__subTitulo {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+
+  letter-spacing: 0.034em;
+  color: #524F4E;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+#splide {
+  visibility: visible;
+
+  @media only screen and (min-width: 768px) {
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
+#tarjetasNormales {
+  visibility: hidden;
+  height: 0px;
+
+  @media only screen and (min-width: 768px) {
+    visibility: visible;
+    height: 100%;
+  }
+}
+
 .cards {
+  background-color: $paleta0;
   border-radius: 10px;
 }
 

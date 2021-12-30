@@ -26,14 +26,11 @@ nav {
 
 .heroe {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/portada_desktop.jpg");
-  height: 50%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
-  @media only screen and (min-width: 768px) {
-    .heroe {
-      height: 100%; } }
 
 .hero-text {
   text-align: start;
@@ -55,7 +52,52 @@ h1 {
       letter-spacing: 0.099em;
       color: #504d4d; } }
 
+#tratamientos {
+  background-color: #d4bba6; }
+
+.tratamientos__titulo {
+  font-family: Frank Ruhl Libre;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2rem;
+  letter-spacing: 0.079em;
+  color: #595351; }
+  @media only screen and (min-width: 768px) {
+    .tratamientos__titulo {
+      font-size: 4rem;
+      line-height: 3rem;
+      margin-top: 5rem; } }
+
+.tratamientos__subTitulo {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.034em;
+  color: #524F4E; }
+  @media only screen and (min-width: 768px) {
+    .tratamientos__subTitulo {
+      font-size: 2rem;
+      line-height: 3rem; } }
+
+#splide {
+  visibility: visible; }
+  @media only screen and (min-width: 768px) {
+    #splide {
+      visibility: hidden;
+      height: 0px; } }
+
+#tarjetasNormales {
+  visibility: hidden;
+  height: 0px; }
+  @media only screen and (min-width: 768px) {
+    #tarjetasNormales {
+      visibility: visible;
+      height: 100%; } }
+
 .cards {
+  background-color: #f6eee2;
   border-radius: 10px; }
 
 .cards:hover {
@@ -76,7 +118,8 @@ h1 {
     @media only screen and (min-width: 768px) {
       .sobreRodrigo h2 {
         font-size: 4rem;
-        line-height: 62px; } }
+        line-height: 62px;
+        margin-top: 5rem; } }
   .sobreRodrigo p {
     font-family: Poppins;
     font-size: 1rem;

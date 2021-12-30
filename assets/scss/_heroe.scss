@@ -1,14 +1,12 @@
 .heroe {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/portada_desktop.jpg");
-    height: 50%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
-    @media only screen and (min-width: 768px) {
-        height: 100%;
-    }
+
 }
 
 .hero-text {
