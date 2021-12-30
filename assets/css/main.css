@@ -25,7 +25,7 @@ nav {
   width: 2rem; }
 
 .heroe {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/finales/portada_desktop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/portada_desktop.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,22 +63,33 @@ h1 {
 
 .sobreRodrigo {
   background-color: #f6dfce; }
+  .sobreRodrigo .textoRodrigo {
+    flex-grow: 2; }
   .sobreRodrigo h2 {
     font-family: Frank Ruhl Libre;
-    font-size: 48px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 62px;
+    line-height: 16px;
     letter-spacing: 0.099em;
     text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .sobreRodrigo h2 {
+        font-size: 4rem;
+        line-height: 62px; } }
   .sobreRodrigo p {
     font-family: Poppins;
-    font-size: 26px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 39px;
+    line-height: 1.5rem;
     letter-spacing: 0.1em;
     text-align: left; }
+    @media only screen and (min-width: 768px) {
+      .sobreRodrigo p {
+        font-size: 1.6rem;
+        line-height: 39px;
+        letter-spacing: 0.1em; } }
 
 .bloque {
   background: #d1af8f;
