@@ -1,29 +1,35 @@
 .heroe {
-    background-image: url("../img/portada_recortada.jpg");
-    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/finales/portada_desktop.jpg");
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @media only screen and (min-width: 768px) {
+        height: 100%;
+    }
 }
 
 .hero-text {
     text-align: start;
     position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: white;
+    top: 60%;
+    left: 5%;
 }
 
 h1 {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-size: 7rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 93px;
-    letter-spacing: 0.099em;
-    text-align: left;
-    color: rgba(80, 77, 77, 1);
+    visibility: hidden;
 
+    @media only screen and (min-width: 768px) {
+        color: rgb(214, 214, 214) !important;
+        visibility: visible;
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 93px;
+        letter-spacing: 0.099em;
+        color: rgba(80, 77, 77, 1);
+    }
 }
