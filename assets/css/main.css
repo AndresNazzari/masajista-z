@@ -35,7 +35,7 @@ nav {
 .hero-text {
   text-align: start;
   position: absolute;
-  top: 60%;
+  top: 35%;
   left: 5%; }
 
 h1 {
@@ -44,7 +44,7 @@ h1 {
     h1 {
       color: #d6d6d6 !important;
       visibility: visible;
-      font-family: 'Frank Ruhl Libre', serif;
+      font-family: "Frank Ruhl Libre", serif;
       font-size: 4rem;
       font-style: normal;
       font-weight: 700;
@@ -114,12 +114,13 @@ h1 {
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.099em;
-    text-align: center; }
+    color: #595351;
+    text-align: left;
+    margin-top: 1.5rem; }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo h2 {
         font-size: 4rem;
-        line-height: 62px;
-        margin-top: 5rem; } }
+        line-height: 62px; } }
   .sobreRodrigo p {
     font-family: Poppins;
     font-size: 1rem;
@@ -130,48 +131,194 @@ h1 {
     text-align: left; }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 39px;
         letter-spacing: 0.1em; } }
 
-.bloque {
-  background: #d1af8f;
-  height: 395px;
-  width: 370px;
-  margin-top: -25px;
-  margin-left: -30px; }
-  @media screen and (min-width: 992px) {
-    .bloque {
-      height: 445px;
-      width: 400px; } }
-  @media screen and (min-width: 1200px) {
-    .bloque {
-      height: 545px;
-      width: 530px; } }
-
 .foto_perfil {
-  height: 400px;
-  width: 340px; }
-  @media screen and (min-width: 992px) {
+  height: 380px;
+  width: 300px;
+  padding-top: 30px;
+  padding-left: 30px;
+  background: #d4bba6; }
+  @media screen and (min-width: 768px) {
     .foto_perfil {
       height: 450px;
       width: 370px; } }
   @media screen and (min-width: 1200px) {
     .foto_perfil {
-      height: 550px;
-      width: 500px; } }
+      height: 600px;
+      width: 520px; } }
 
 .perfil {
-  height: 425px; }
+  height: 400px;
+  justify-content: center; }
+  @media screen and (min-width: 576px) {
+    .perfil {
+      justify-content: left;
+      padding-left: 0px; } }
+  @media screen and (min-width: 768px) {
+    .perfil {
+      height: 480px;
+      justify-content: left;
+      padding-left: 0px; } }
   @media screen and (min-width: 992px) {
     .perfil {
-      height: 480px; } }
+      height: 480px;
+      justify-content: right;
+      padding-right: 0px; } }
   @media screen and (min-width: 1200px) {
     .perfil {
-      height: 580px; } }
+      height: 640px; } }
 
-.justifyContent {
-  justify-content: center; }
-  @media screen and (min-width: 992px) {
-    .justifyContent {
-      justify-content: end; } }
+.visible {
+  display: none; }
+  @media screen and (min-width: 1200px) {
+    .visible {
+      display: block; } }
+
+.gridConteiner {
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #d4bba6;
+  grid-template-areas: "covidTitulo " "fotoPerfil" "item1" "item2" "item3"; }
+  @media only screen and (min-width: 576px) {
+    .gridConteiner {
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "covidTitulo covidTitulo" "item1 fotoPerfil" "item2 fotoPerfil" "item3 item3"; } }
+  @media only screen and (min-width: 1200px) {
+    .gridConteiner {
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "fotoPerfil covidTitulo" "fotoPerfil item0" "fotoPerfil item1" "fotoPerfil item2" "fotoPerfil item3"; } }
+  .gridConteiner .textoCovid {
+    flex-grow: 2; }
+  .gridConteiner h2 {
+    font-family: Frank Ruhl Libre;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.099em;
+    color: #595351;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 768px) {
+      .gridConteiner h2 {
+        font-size: 4rem;
+        line-height: 62px;
+        margin-top: 2.5rem; } }
+    @media only screen and (min-width: 1200px) {
+      .gridConteiner h2 {
+        text-align: left; } }
+  .gridConteiner p {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    text-align: left; }
+    @media only screen and (min-width: 768px) {
+      .gridConteiner p {
+        font-size: 1.6rem;
+        line-height: 39px;
+        letter-spacing: 0.1em; } }
+
+.foto_perfil2 {
+  height: 380px;
+  width: 300px; }
+  @media screen and (min-width: 768px) {
+    .foto_perfil2 {
+      height: 450px;
+      width: 370px; } }
+  @media screen and (min-width: 1200px) {
+    .foto_perfil2 {
+      height: 600px;
+      width: 520px; } }
+
+.perfil2 {
+  height: 380px;
+  justify-content: center;
+  display: flex;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .perfil2 {
+      min-height: 450px;
+      height: auto; } }
+  @media screen and (min-width: 1200px) {
+    .perfil2 {
+      min-height: 600px;
+      height: auto; } }
+
+.item1 {
+  grid-area: item1;
+  display: flex;
+  align-items: center; }
+
+.item2 {
+  grid-area: item2;
+  display: flex;
+  align-items: center; }
+
+.item3 {
+  grid-area: item3;
+  display: flex;
+  align-items: center; }
+
+.covidTitulo {
+  grid-area: covidTitulo; }
+
+.fotoPerfil {
+  grid-area: fotoPerfil; }
+
+#promociones {
+  background-color: #d4bba6; }
+
+.promos {
+  border-radius: 10px;
+  background-color: #f6eee2; }
+
+.promos h3 {
+  font-family: Frank Ruhl Libre;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.099em;
+  color: #595351;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  @media only screen and (min-width: 768px) {
+    .promos h3 {
+      font-size: 4rem;
+      line-height: 62px;
+      margin-top: 2.5rem; } }
+  @media only screen and (min-width: 1200px) {
+    .promos h3 {
+      text-align: left; } }
+
+.promos p {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  text-align: left; }
+  @media only screen and (min-width: 768px) {
+    .promos p {
+      font-size: 1.6rem;
+      line-height: 39px;
+      letter-spacing: 0.1em; } }
+
+.cardsPromo {
+  background-color: #d1af8f;
+  border-radius: 10px;
+  color: white; }
+  .cardsPromo h5 {
+    font-size: 2rem;
+    text-align: left; }
+  .cardsPromo p {
+    font-size: 1.2rem; }

@@ -65,26 +65,19 @@
     <!--- Comienzo Quienes Somos-->
     <div class="sobreRodrigo container-fluid " id="sobreRodrigo">
         <div class="row">
-            <div class="col-12 col-lg-6 perfil d-flex justifyContent position-relative">
-                <div class="bloque position-absolute">
-                </div>
-                <img src="./assets/img/about.jpg" class="position-absolute foto_perfil" alt="">
+            <div class="col-12 col-sm-6 perfil d-flex">
+                <img src="./assets/img/about.jpg" class="foto_perfil" alt="">
             </div>
-            <div class="col-12 col-lg-4 text-center textoRodrigo">
-                <h2 class="pt-lg-4">Sobre Rodrigo</h2>
+            <div class="col-12 col-sm-6 text-center textoRodrigo">
+                <h2 class="pt-lg-4 px-5">Sobre mi</h2>
                 <div class="px-5 py-3">
                     <p>Mi nombre es Rodrigo Zavala, tengo 29 años. Nací en Buenos Aires, Argentina y actualmente vivo en
-                        Madrid, España.
-                        <br>
-                        Realicé mis estudios como masajista general y descontracturante en el Colegio de Salud de
-                        Saavedra.
-                        <br>
-                        Mi vínculo con la salud es muy directo y fundamental, procuro llevar los masajes al concepto
-                        real de la cura a los
-                        dolores que sufren los pacientes sin dejar de lado que es una terapia para ayudar al bienestar
-                        psicológico de las
-                        personas.
-                    </p>
+                        Madrid, España.</p>
+                    <p class=visible>Realicé mis estudios como masajista general y descontracturante en el Colegio de Salud de
+                        Saavedra.</p>
+                    <p class=visible>Mi vínculo con la salud es muy directo y fundamental, procuro llevar los masajes al concepto
+                        real de la cura a los dolores que sufren los pacientes sin dejar de lado que es una terapia para ayudar al bienestar
+                        psicológico de las personas.</p>
                 </div>
             </div>
         </div>
@@ -94,10 +87,12 @@
 
     <!--- Comienzo Tratamientos-->
     <section id="tratamientos">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="tratamientos__titulo ">Tratamientos</h2>
-                <h3 class="tratamientos__subTitulo ">¿Qué clase de masajes buscas?</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="tratamientos__titulo ">Tratamientos</h2>
+                    <h3 class="tratamientos__subTitulo ">¿Qué clase de masajes buscas?</h3>
+                </div>
             </div>
         </div>
 
@@ -228,14 +223,66 @@
 
     <!--- Cuidados Covid-->
     <section id="cuidadosCovid">
-
+        <div class="gridConteiner">
+            <div class="fotoPerfil perfil2 d-flex justifyContent">
+                <img src="./assets/img/about.jpg" class="position-absolute foto_perfil2" alt="">
+            </div>
+            <div class="textoCovid covidTitulo">
+                <h2>Cuidados por COVID</h2>
+            </div>
+            <div class=item0>
+                <p class="visible">Para asegurar la salud y bienestar de todos, tenemos el siguiente procedimiento de cuidado a la hora de comenzar con la sesión.</p>
+            </div>
+            <ul class="m-2 item1 ps-3">
+                <li >
+                    <p>Es obligatorio el uso de mascarilla/barbijo para el masajista y el cliente</p>
+                </li>
+            </ul>
+            <ul class="m-2 item2 ps-3">
+                <li>
+                    <p>Se le pide a los clientes que proporcionen sus propias toallas</p>
+                </li>
+            </ul>
+            <ul class="m-2 item3 ps-3">
+                <li>
+                    <p>Desinfectamos todo antes y despues de la visita de forma exhaustiva</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <!--- Fin Covid-->
 
 
     <!---  Promociones-->
-    <section id="promociones">
-
+    <section id="promociones" class=p-5>
+        <div class="card promos text-center">
+            <div class="card-body">
+                <h3 class="card-title text-center">Promociones</h3>
+                <p class="card-text text-center pt-4">Encuentra el plan perfecto para ti</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="cardsPromo p-4 mx-4 my-5">
+                                <h5 class="card-title py-2">Colegas</h5>
+                                <p class="card-text  py-3">Si traes un cliente nuevo recibirás un 2 x 1 para disfrutarlo con esa persona.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="cardsPromo p-4 mx-4 my-5 ">
+                                <h5 class="card-title py-2 ">Colegas</h5>
+                                <p class="card-text py-3">Si traes un cliente nuevo recibirás un 2 x 1 para disfrutarlo con esa persona.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="cardsPromo p-4 mx-4 my-5">
+                                <h5 class="card-title py-2">Colegas</h5>
+                                <p class="card-text py-3">Si traes un cliente nuevo recibirás un 2 x 1 para disfrutarlo con esa persona.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--- Fin Promociones-->
 

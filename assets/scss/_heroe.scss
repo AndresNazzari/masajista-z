@@ -1,33 +1,32 @@
 .heroe {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/portada_desktop.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/portada_desktop.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .hero-text {
-    text-align: start;
-    position: absolute;
-    top: 60%;
-    left: 5%;
+  text-align: start;
+  position: absolute;
+  top: 35%;
+  left: 5%;
 }
 
 h1 {
-    visibility: hidden;
+  visibility: hidden;
 
-    @media only screen and (min-width: 768px) {
-        color: rgb(214, 214, 214) !important;
-        visibility: visible;
-        font-family: 'Frank Ruhl Libre', serif;
-        font-size: 4rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 93px;
-        letter-spacing: 0.099em;
-        color: rgba(80, 77, 77, 1);
-    }
+  @media only screen and (min-width: 768px) {
+    color: rgb(214, 214, 214) !important;
+    visibility: visible;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 93px;
+    letter-spacing: 0.099em;
+    color: rgba(80, 77, 77, 1);
+  }
 }

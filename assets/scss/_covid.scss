@@ -1,0 +1,128 @@
+.gridConteiner {
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: $paleta3;
+  grid-template-areas:
+    "covidTitulo "
+    "fotoPerfil"
+    "item1"
+    "item2"
+    "item3";
+  @media only screen and (min-width: 576px) {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "covidTitulo covidTitulo"
+      "item1 fotoPerfil"
+      "item2 fotoPerfil"
+      "item3 item3";
+  }
+  @media only screen and (min-width: 1200px) {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "fotoPerfil covidTitulo"
+      "fotoPerfil item0"
+      "fotoPerfil item1"
+      "fotoPerfil item2"
+      "fotoPerfil item3";
+  }
+
+  .textoCovid {
+    flex-grow: 2;
+  }
+
+  h2 {
+    font-family: Frank Ruhl Libre;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.099em;
+    color: #595351;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 4rem;
+      line-height: 62px;
+      margin-top: 2.5rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  p {
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 1.6rem;
+      line-height: 39px;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+.foto_perfil2 {
+  height: 380px;
+  width: 300px;
+
+  @media screen and (min-width: 768px) {
+    height: 450px;
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    width: 520px;
+  }
+}
+
+.perfil2 {
+  height: 380px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    min-height: 450px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 600px;
+    height: auto;
+  }
+}
+
+.item1 {
+  grid-area: item1;
+  display: flex;
+  align-items: center;
+}
+
+.item2 {
+  grid-area: item2;
+  display: flex;
+  align-items: center;
+}
+
+.item3 {
+  grid-area: item3;
+  display: flex;
+  align-items: center;
+}
+
+.covidTitulo {
+  grid-area: covidTitulo;
+}
+
+.fotoPerfil {
+  grid-area: fotoPerfil;
+}

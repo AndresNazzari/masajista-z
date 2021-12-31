@@ -1,0 +1,59 @@
+#promociones {
+  background-color: $paleta3;
+}
+
+.promos {
+  border-radius: 10px;
+  background-color: $paleta0;
+}
+
+.promos h3 {
+  font-family: Frank Ruhl Libre;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.099em;
+  color: #595351;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 62px;
+    margin-top: 2.5rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.promos p {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  text-align: left;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.6rem;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.cardsPromo {
+  background-color: $paleta4;
+  border-radius: 10px;
+  color: white;
+  h5 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
