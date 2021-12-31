@@ -1,4 +1,7 @@
 #contacto {
+  background-color: $paleta2;
+  margin-top: 0px;
+  padding-top: 0px;
   h3 {
     font-family: Frank Ruhl Libre;
     font-size: 2rem;
@@ -7,14 +10,11 @@
     line-height: 16px;
     letter-spacing: 0.099em;
     color: #595351;
-
-    margin-top: 3rem;
     margin-bottom: 2rem;
 
     @media only screen and (min-width: 768px) {
       font-size: 4rem;
       line-height: 62px;
-      margin-top: 2.5rem;
     }
   }
   p {
