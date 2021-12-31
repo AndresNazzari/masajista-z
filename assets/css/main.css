@@ -322,3 +322,44 @@ h1 {
     text-align: left; }
   .cardsPromo p {
     font-size: 1.2rem; }
+
+#contacto h3 {
+  font-family: Frank Ruhl Libre;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.099em;
+  color: #595351;
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 768px) {
+    #contacto h3 {
+      font-size: 4rem;
+      line-height: 62px;
+      margin-top: 2.5rem; } }
+
+#contacto p {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  text-align: left; }
+  @media only screen and (min-width: 768px) {
+    #contacto p {
+      font-size: 1.6rem;
+      line-height: 39px;
+      letter-spacing: 0.1em; } }
+
+#contacto li {
+  list-style: none; }
+
+.botonCita {
+  background-color: #f6eee2;
+  border-radius: 10px; }
+
+.mapa {
+  height: 50vh;
+  border-radius: 25px; }
