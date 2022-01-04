@@ -27,31 +27,38 @@ nav {
 
 .heroe {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/portada_desktop.jpg");
-  height: 100%;
+  height: 30%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
-
-.hero-text {
-  text-align: start;
-  position: absolute;
-  top: 35%;
-  left: 5%; }
-
-h1 {
-  visibility: hidden; }
+  position: relative;
+  margin-top: 4rem; }
+  .heroe .hero-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; }
   @media only screen and (min-width: 768px) {
-    h1 {
-      color: #d6d6d6 !important;
-      visibility: visible;
-      font-family: "Frank Ruhl Libre", serif;
-      font-size: 4rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 93px;
-      letter-spacing: 0.099em;
-      color: #504d4d; } }
+    .heroe {
+      height: 40%; } }
+  @media only screen and (min-width: 1024px) {
+    .heroe {
+      height: 80%; } }
+  .heroe h1 {
+    visibility: hidden; }
+    @media only screen and (min-width: 768px) {
+      .heroe h1 {
+        color: #d6d6d6 !important;
+        visibility: visible;
+        font-family: "Frank Ruhl Libre", serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 93px;
+        letter-spacing: 0.099em;
+        color: #504d4d; } }
 
 #tratamientos {
   background-color: #d4bba6; }
