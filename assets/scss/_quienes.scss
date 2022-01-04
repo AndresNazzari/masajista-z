@@ -1,5 +1,6 @@
 .sobreRodrigo {
   background-color: $paleta1;
+  margin-top: 4rem;
 
   .textoRodrigo {
     flex-grow: 2;
@@ -13,23 +14,24 @@
     line-height: 16px;
     letter-spacing: 0.099em;
     color: #595351;
-    text-align: left;
+    text-align: center;
     margin-top: 1.5rem;
 
     @media only screen and (min-width: 768px) {
       font-size: 4rem;
       line-height: 62px;
+      margin-top: 0;
     }
   }
 
   p {
     font-family: Poppins;
     font-size: 1rem;
-    font-style: normal;
+    font-style: center;
     font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
-    text-align: left;
+    text-align: center;
 
     @media only screen and (min-width: 768px) {
       font-size: 1.4rem;
@@ -46,6 +48,7 @@
   padding-left: 30px;
   background: $paleta3;
 
+
   @media screen and (min-width: 768px) {
     height: 450px;
     width: 370px;
@@ -55,6 +58,10 @@
     height: 600px;
     width: 520px;
   }
+}
+
+.foto_perfil2 {
+  border: solid 2px $paleta0;
 }
 
 .perfil {
@@ -85,6 +92,7 @@
 
 .visible {
   display: none;
+
   @media screen and (min-width: 1200px) {
     display: block;
   }

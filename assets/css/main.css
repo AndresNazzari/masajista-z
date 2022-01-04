@@ -8,7 +8,8 @@
 
 body,
 html {
-  height: 100%; }
+  height: 100%;
+  background-color: #f6dfce; }
 
 nav {
   background-color: #f6dfce;
@@ -94,17 +95,31 @@ h1 {
   @media only screen and (min-width: 768px) {
     #tarjetasNormales {
       visibility: visible;
-      height: 100%; } }
+      height: 100%;
+      width: 90vw; } }
 
 .cards {
   background-color: #f6eee2;
-  border-radius: 10px; }
-
-.cards:hover {
-  transform: scale(1.05); }
+  border-radius: 10px;
+  margin: 3rem;
+  padding: 2rem; }
+  @media screen and (min-width: 768px) {
+    .cards {
+      display: flex;
+      margin: 1rem;
+      padding: 1rem;
+      height: 90%;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between; } }
+  @media screen and (min-width: 1200px) {
+    .cards {
+      margin: 2rem;
+      padding: 2rem; } }
 
 .sobreRodrigo {
-  background-color: #f6dfce; }
+  background-color: #f6dfce;
+  margin-top: 4rem; }
   .sobreRodrigo .textoRodrigo {
     flex-grow: 2; }
   .sobreRodrigo h2 {
@@ -115,20 +130,21 @@ h1 {
     line-height: 16px;
     letter-spacing: 0.099em;
     color: #595351;
-    text-align: left;
+    text-align: center;
     margin-top: 1.5rem; }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo h2 {
         font-size: 4rem;
-        line-height: 62px; } }
+        line-height: 62px;
+        margin-top: 0; } }
   .sobreRodrigo p {
     font-family: Poppins;
     font-size: 1rem;
-    font-style: normal;
+    font-style: center;
     font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
-    text-align: left; }
+    text-align: center; }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo p {
         font-size: 1.4rem;
@@ -149,6 +165,9 @@ h1 {
     .foto_perfil {
       height: 600px;
       width: 520px; } }
+
+.foto_perfil2 {
+  border: solid 2px #f6eee2; }
 
 .perfil {
   height: 400px;
@@ -178,16 +197,19 @@ h1 {
       display: block; } }
 
 .gridConteiner {
+  padding-top: 0;
   display: grid;
   grid-template-columns: 100%;
   background-color: #d4bba6;
-  grid-template-areas: "covidTitulo " "fotoPerfil" "item1" "item2" "item3"; }
+  grid-template-areas: "covidTitulo " "item0" "fotoPerfil" "item1" "item2" "item3"; }
   @media only screen and (min-width: 576px) {
     .gridConteiner {
+      padding-top: 3rem;
       grid-template-columns: 50% 50%;
-      grid-template-areas: "covidTitulo covidTitulo" "item1 fotoPerfil" "item2 fotoPerfil" "item3 item3"; } }
+      grid-template-areas: "covidTitulo covidTitulo" "item1 fotoPerfil" "item2 fotoPerfil" "item3 item3"; } }
   @media only screen and (min-width: 1200px) {
     .gridConteiner {
+      padding-top: 3rem;
       grid-template-columns: 50% 50%;
       grid-template-areas: "fotoPerfil covidTitulo" "fotoPerfil item0" "fotoPerfil item1" "fotoPerfil item2" "fotoPerfil item3"; } }
   .gridConteiner .textoCovid {
@@ -213,21 +235,32 @@ h1 {
         text-align: left; } }
   .gridConteiner p {
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem;
     letter-spacing: 0.1em;
-    text-align: left; }
+    line-height: 2rem;
+    text-align: left;
+    margin: 0; }
     @media only screen and (min-width: 768px) {
       .gridConteiner p {
         font-size: 1.6rem;
         line-height: 39px;
         letter-spacing: 0.1em; } }
+    @media only screen and (min-width: 1024px) {
+      .gridConteiner p {
+        line-height: 3rem; } }
+  .gridConteiner ul {
+    margin: 1rem 1rem 0 3rem;
+    list-style-image: url(../media/checked.png); }
+    @media only screen and (min-width: 1200px) {
+      .gridConteiner ul {
+        margin: 1rem 1rem 0 0rem; } }
 
 .foto_perfil2 {
   height: 380px;
-  width: 300px; }
+  width: 300px;
+  border-radius: 2rem; }
   @media screen and (min-width: 768px) {
     .foto_perfil2 {
       height: 450px;

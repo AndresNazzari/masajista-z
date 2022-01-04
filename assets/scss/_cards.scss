@@ -49,14 +49,29 @@
   @media only screen and (min-width: 768px) {
     visibility: visible;
     height: 100%;
+    width: 90vw;
   }
 }
 
 .cards {
   background-color: $paleta0;
   border-radius: 10px;
-}
+  margin: 3rem;
+  padding: 2rem;
 
-.cards:hover {
-  transform: scale(1.05);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    height: 90%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 2rem;
+    padding: 2rem;
+  }
 }

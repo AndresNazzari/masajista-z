@@ -1,22 +1,27 @@
 .gridConteiner {
+  padding-top: 0;
   display: grid;
   grid-template-columns: 100%;
   background-color: $paleta3;
   grid-template-areas:
     "covidTitulo "
+    "item0"
     "fotoPerfil"
     "item1"
     "item2"
     "item3";
+
   @media only screen and (min-width: 576px) {
+    padding-top: 3rem;
     grid-template-columns: 50% 50%;
     grid-template-areas:
       "covidTitulo covidTitulo"
-      "item1 fotoPerfil"
-      "item2 fotoPerfil"
+      "item1 fotoPerfil""item2 fotoPerfil"
       "item3 item3";
   }
+
   @media only screen and (min-width: 1200px) {
+    padding-top: 3rem;
     grid-template-columns: 50% 50%;
     grid-template-areas:
       "fotoPerfil covidTitulo"
@@ -47,6 +52,7 @@
       line-height: 62px;
       margin-top: 2.5rem;
     }
+
     @media only screen and (min-width: 1200px) {
       text-align: left;
     }
@@ -54,24 +60,42 @@
 
   p {
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem;
     letter-spacing: 0.1em;
+    line-height: 2rem;
     text-align: left;
+    margin: 0;
 
     @media only screen and (min-width: 768px) {
       font-size: 1.6rem;
       line-height: 39px;
       letter-spacing: 0.1em;
     }
+
+    @media only screen and (min-width: 1024px) {
+      line-height: 3rem;
+    }
+  }
+
+  ul {
+    margin: 1rem 1rem 0 3rem;
+    //list-style-image: url(../img/healthy.png);
+    list-style-image: url(../media/checked.png);
+
+    @media only screen and (min-width: 1200px) {
+      margin: 1rem 1rem 0 0rem;
+
+    }
+
   }
 }
 
 .foto_perfil2 {
   height: 380px;
   width: 300px;
+  border-radius: 2rem;
 
   @media screen and (min-width: 768px) {
     height: 450px;
