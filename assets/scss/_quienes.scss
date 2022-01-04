@@ -1,6 +1,12 @@
 .sobreRodrigo {
   background-color: $paleta1;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 
   .textoRodrigo {
     flex-grow: 2;
@@ -18,23 +24,43 @@
     margin-top: 1.5rem;
 
     @media only screen and (min-width: 768px) {
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 62px;
       margin-top: 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 4rem;
+
     }
   }
 
   p {
     font-family: Poppins;
     font-size: 1rem;
-    font-style: center;
     font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
     text-align: center;
+    padding-right: 0.5rem;
+    margin-bottom: 0;
 
     @media only screen and (min-width: 768px) {
-      font-size: 1.4rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.1em;
+      text-align: start;
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      letter-spacing: 0.1em;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      font-size: 1.6rem;
       line-height: 39px;
       letter-spacing: 0.1em;
     }
@@ -42,30 +68,24 @@
 }
 
 .foto_perfil {
-  height: 380px;
+  height: auto;
   width: 300px;
   padding-top: 30px;
   padding-left: 30px;
   background: $paleta3;
 
-
   @media screen and (min-width: 768px) {
-    height: 450px;
+    height: auto;
     width: 370px;
   }
 
   @media screen and (min-width: 1200px) {
-    height: 600px;
+    height: auto;
     width: 520px;
   }
 }
 
-.foto_perfil2 {
-  border: solid 2px $paleta0;
-}
-
 .perfil {
-  height: 400px;
   justify-content: center;
 
   @media screen and (min-width: 576px) {
@@ -74,26 +94,21 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 480px;
     justify-content: left;
     padding-left: 0px;
   }
 
   @media screen and (min-width: 992px) {
-    height: 480px;
     justify-content: right;
     padding-right: 0px;
   }
 
-  @media screen and (min-width: 1200px) {
-    height: 640px;
-  }
 }
 
 .visible {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 726px) {
     display: block;
   }
 }

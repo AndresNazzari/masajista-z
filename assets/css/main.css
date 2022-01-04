@@ -26,39 +26,47 @@ nav {
   width: 2rem; }
 
 .heroe {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/portada_desktop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/portada_desktop.jpg");
   height: 30%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin-top: 4rem; }
-  .heroe .hero-text {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; }
   @media only screen and (min-width: 768px) {
     .heroe {
       height: 40%; } }
   @media only screen and (min-width: 1024px) {
     .heroe {
       height: 80%; } }
-  .heroe h1 {
-    visibility: hidden; }
-    @media only screen and (min-width: 768px) {
-      .heroe h1 {
-        color: #d6d6d6 !important;
-        visibility: visible;
-        font-family: "Frank Ruhl Libre", serif;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 93px;
-        letter-spacing: 0.099em;
-        color: #504d4d; } }
+  .heroe .hero-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .heroe .hero-text h1 {
+      /* visibility: hidden; */
+      color: #d6d6d6 !important;
+      visibility: visible;
+      font-family: "Frank Ruhl Libre", serif;
+      font-size: 1.5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.099em;
+      color: #504d4d; }
+      @media only screen and (min-width: 768px) {
+        .heroe .hero-text h1 {
+          font-size: 2.5rem;
+          line-height: 4rem; } }
+      @media only screen and (min-width: 1024px) {
+        .heroe .hero-text h1 {
+          font-size: 3.5rem;
+          line-height: 4rem; } }
 
 #tratamientos {
   background-color: #d4bba6; }
@@ -126,7 +134,12 @@ nav {
 
 .sobreRodrigo {
   background-color: #f6dfce;
-  margin-top: 4rem; }
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .sobreRodrigo {
+      margin-top: 3rem;
+      margin-bottom: 2rem; } }
   .sobreRodrigo .textoRodrigo {
     flex-grow: 2; }
   .sobreRodrigo h2 {
@@ -141,43 +154,54 @@ nav {
     margin-top: 1.5rem; }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo h2 {
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 62px;
         margin-top: 0; } }
+    @media only screen and (min-width: 1024px) {
+      .sobreRodrigo h2 {
+        font-size: 4rem; } }
   .sobreRodrigo p {
     font-family: Poppins;
     font-size: 1rem;
-    font-style: center;
     font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
-    text-align: center; }
+    text-align: center;
+    padding-right: 0.5rem;
+    margin-bottom: 0; }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo p {
-        font-size: 1.4rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1em;
+        text-align: start; } }
+    @media only screen and (min-width: 1024px) {
+      .sobreRodrigo p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.1em; } }
+    @media only screen and (min-width: 1200px) {
+      .sobreRodrigo p {
+        font-size: 1.6rem;
         line-height: 39px;
         letter-spacing: 0.1em; } }
 
 .foto_perfil {
-  height: 380px;
+  height: auto;
   width: 300px;
   padding-top: 30px;
   padding-left: 30px;
   background: #d4bba6; }
   @media screen and (min-width: 768px) {
     .foto_perfil {
-      height: 450px;
+      height: auto;
       width: 370px; } }
   @media screen and (min-width: 1200px) {
     .foto_perfil {
-      height: 600px;
+      height: auto;
       width: 520px; } }
 
-.foto_perfil2 {
-  border: solid 2px #f6eee2; }
-
 .perfil {
-  height: 400px;
   justify-content: center; }
   @media screen and (min-width: 576px) {
     .perfil {
@@ -185,21 +209,16 @@ nav {
       padding-left: 0px; } }
   @media screen and (min-width: 768px) {
     .perfil {
-      height: 480px;
       justify-content: left;
       padding-left: 0px; } }
   @media screen and (min-width: 992px) {
     .perfil {
-      height: 480px;
       justify-content: right;
       padding-right: 0px; } }
-  @media screen and (min-width: 1200px) {
-    .perfil {
-      height: 640px; } }
 
 .visible {
   display: none; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 726px) {
     .visible {
       display: block; } }
 
@@ -258,16 +277,20 @@ nav {
       .gridConteiner p {
         line-height: 3rem; } }
   .gridConteiner ul {
-    margin: 1rem 1rem 0 3rem;
+    margin: 1rem 1rem 0 1rem;
     list-style-image: url(../media/checked.png); }
+    @media only screen and (min-width: 768px) {
+      .gridConteiner ul {
+        margin: 1rem 1rem 0 3rem; } }
     @media only screen and (min-width: 1200px) {
       .gridConteiner ul {
         margin: 1rem 1rem 0 0rem; } }
 
 .foto_perfil2 {
-  height: 380px;
+  height: auto;
   width: 300px;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  border: solid 2px #f6eee2; }
   @media screen and (min-width: 768px) {
     .foto_perfil2 {
       height: 450px;
@@ -311,6 +334,12 @@ nav {
 
 .fotoPerfil {
   grid-area: fotoPerfil; }
+
+.visible_covid {
+  display: none; }
+  @media screen and (min-width: 1200px) {
+    .visible_covid {
+      display: block; } }
 
 #promociones {
   background: linear-gradient(170deg, #d4bba6 50%, #dec9b9 50%); }

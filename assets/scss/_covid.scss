@@ -80,22 +80,25 @@
   }
 
   ul {
-    margin: 1rem 1rem 0 3rem;
-    //list-style-image: url(../img/healthy.png);
+    margin: 1rem 1rem 0 1rem;
     list-style-image: url(../media/checked.png);
+
+    @media only screen and (min-width: 768px) {
+      margin: 1rem 1rem 0 3rem;
+    }
 
     @media only screen and (min-width: 1200px) {
       margin: 1rem 1rem 0 0rem;
-
     }
 
   }
 }
 
 .foto_perfil2 {
-  height: 380px;
+  height: auto;
   width: 300px;
   border-radius: 2rem;
+  border: solid 2px $paleta0;
 
   @media screen and (min-width: 768px) {
     height: 450px;
@@ -107,6 +110,7 @@
     width: 520px;
   }
 }
+
 
 .perfil2 {
   height: 380px;
@@ -149,4 +153,12 @@
 
 .fotoPerfil {
   grid-area: fotoPerfil;
+}
+
+.visible_covid {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
