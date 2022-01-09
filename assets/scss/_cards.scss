@@ -6,15 +6,23 @@
   font-family: Frank Ruhl Libre;
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 20px;
   margin-top: 2rem;
   letter-spacing: 0.079em;
   color: #595351;
 
+  @media only screen and (min-width: 576px) {
+    font-size: 1.8rem;
+  }
+
   @media only screen and (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 3rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 4rem;
   }
 }
 
@@ -22,13 +30,18 @@
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   letter-spacing: 0.034em;
-  color: #524F4E;
+  color: #524f4e;
 
   @media only screen and (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.8rem;
     line-height: 3rem;
   }
 }
@@ -56,11 +69,19 @@
 .cards {
   background-color: $paleta0;
   border-radius: 10px;
-  margin: 3rem;
-  padding: 2rem;
+  margin: 1.5rem;
+  padding: 0.2rem 1rem;
+  min-height: 15rem;
 
-
+  @media screen and (min-width: 480px) {
+    height: 18rem;
+    width: 25rem;
+  }
   @media screen and (min-width: 768px) {
+    height: auto;
+    max-height: 18rem;
+    width: auto;
+    max-width: 25rem;
     display: flex;
     margin: 1rem;
     padding: 1rem;
@@ -73,5 +94,31 @@
   @media screen and (min-width: 1200px) {
     margin: 2rem;
     padding: 2rem;
+  }
+}
+
+.imgTrat {
+  order: 2;
+  margin-top: 1rem;
+
+  @media screen and (min-width: 480px) {
+    order: 1;
+  }
+}
+
+.titleTrat {
+  padding-top: 2rem;
+  order: 1;
+
+  @media screen and (min-width: 480px) {
+    order: 2;
+  }
+}
+
+.cardFlex {
+  display: flex;
+
+  @media screen and (min-width: 480px) {
+    display: block;
   }
 }

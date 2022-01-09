@@ -1,0 +1,113 @@
+.modalFormat {
+  background-color: $paleta0;
+  padding: 3rem 2rem;
+}
+
+.modal_title {
+  font-family: Frank Ruhl Libre;
+  text-align: left;
+  color: #595351;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.035em;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+
+.modal_price {
+  font-family: Poppins;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #595351;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+
+.modal_text {
+  font-family: Poppins;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.095em;
+  color: #555555;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.modal_duration {
+  font-family: Poppins;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #595351;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.modal_button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  color: #000000;
+  background: #e1d1c2;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 28px;
+}
+
+.modal_img {
+  height: 30px;
+  width: 30px;
+}

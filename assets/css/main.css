@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box; }
 
 body,
@@ -75,26 +75,36 @@ nav {
   font-family: Frank Ruhl Libre;
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 20px;
   margin-top: 2rem;
   letter-spacing: 0.079em;
   color: #595351; }
+  @media only screen and (min-width: 576px) {
+    .tratamientos__titulo {
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 768px) {
     .tratamientos__titulo {
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 3rem;
-      margin-top: 5rem; } }
+      margin-top: 3rem; } }
+  @media only screen and (min-width: 1200px) {
+    .tratamientos__titulo {
+      font-size: 4rem; } }
 
 .tratamientos__subTitulo {
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.034em;
-  color: #524F4E; }
+  color: #524f4e; }
   @media only screen and (min-width: 768px) {
     .tratamientos__subTitulo {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      line-height: 3rem; } }
+  @media only screen and (min-width: 1200px) {
+    .tratamientos__subTitulo {
+      font-size: 1.8rem;
       line-height: 3rem; } }
 
 #splide {
@@ -116,10 +126,19 @@ nav {
 .cards {
   background-color: #f6eee2;
   border-radius: 10px;
-  margin: 3rem;
-  padding: 2rem; }
+  margin: 1.5rem;
+  padding: 0.2rem 1rem;
+  min-height: 15rem; }
+  @media screen and (min-width: 480px) {
+    .cards {
+      height: 18rem;
+      width: 25rem; } }
   @media screen and (min-width: 768px) {
     .cards {
+      height: auto;
+      max-height: 18rem;
+      width: auto;
+      max-width: 25rem;
       display: flex;
       margin: 1rem;
       padding: 1rem;
@@ -132,54 +151,94 @@ nav {
       margin: 2rem;
       padding: 2rem; } }
 
+.imgTrat {
+  order: 2;
+  margin-top: 1rem; }
+  @media screen and (min-width: 480px) {
+    .imgTrat {
+      order: 1; } }
+
+.titleTrat {
+  padding-top: 2rem;
+  order: 1; }
+  @media screen and (min-width: 480px) {
+    .titleTrat {
+      order: 2; } }
+
+.cardFlex {
+  display: flex; }
+  @media screen and (min-width: 480px) {
+    .cardFlex {
+      display: block; } }
+
 .sobreRodrigo {
   background-color: #f6dfce;
-  margin-top: 2rem;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) {
     .sobreRodrigo {
-      margin-top: 3rem;
       margin-bottom: 2rem; } }
   .sobreRodrigo .textoRodrigo {
     flex-grow: 2; }
   .sobreRodrigo h2 {
     font-family: Frank Ruhl Libre;
-    font-size: 2rem;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 24px;
     letter-spacing: 0.099em;
+    position: absolute;
+    top: 38%;
     color: #595351;
-    text-align: center;
+    text-align: left;
     margin-top: 1.5rem; }
+    @media only screen and (min-width: 450px) {
+      .sobreRodrigo h2 {
+        top: 40%; } }
+    @media only screen and (min-width: 576px) {
+      .sobreRodrigo h2 {
+        position: static;
+        top: 0%;
+        font-size: 1.8rem; } }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo h2 {
         font-size: 3rem;
         line-height: 62px;
-        margin-top: 0; } }
+        margin-top: 5; } }
     @media only screen and (min-width: 1024px) {
       .sobreRodrigo h2 {
-        font-size: 4rem; } }
+        font-size: 3rem;
+        margin-top: 3rem; } }
   .sobreRodrigo p {
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 16px;
     letter-spacing: 0.1em;
-    text-align: center;
+    text-align: start;
+    position: absolute;
+    top: 44%;
     padding-right: 0.5rem;
     margin-bottom: 0; }
+    @media only screen and (min-width: 450px) {
+      .sobreRodrigo p {
+        top: 46%; } }
+    @media only screen and (min-width: 576px) {
+      .sobreRodrigo p {
+        position: static;
+        top: 0%;
+        padding-bottom: 0.5rem; } }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo p {
         font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: 0.1em;
-        text-align: start; } }
+        padding-bottom: 0.5rem; } }
     @media only screen and (min-width: 1024px) {
       .sobreRodrigo p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.7rem;
-        letter-spacing: 0.1em; } }
+        letter-spacing: 0.1em;
+        padding-bottom: 1rem; } }
     @media only screen and (min-width: 1200px) {
       .sobreRodrigo p {
         font-size: 1.6rem;
@@ -187,147 +246,179 @@ nav {
         letter-spacing: 0.1em; } }
 
 .foto_perfil {
-  height: auto;
-  width: 300px;
-  padding-top: 30px;
-  padding-left: 30px;
-  background: #d4bba6; }
+  height: 162.91;
+  width: 145.7px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: linear-gradient(180deg, #d4bba6 90%, #f6dfce 90%); }
+  @media screen and (min-width: 576px) {
+    .foto_perfil {
+      padding-top: 18px;
+      padding-left: 18px;
+      height: 261px;
+      width: 220px; } }
   @media screen and (min-width: 768px) {
     .foto_perfil {
-      height: auto;
+      padding-top: 30px;
+      padding-left: 30px;
+      height: 421px;
+      width: 360px; } }
+  @media screen and (min-width: 992px) {
+    .foto_perfil {
+      height: 471px;
       width: 370px; } }
   @media screen and (min-width: 1200px) {
     .foto_perfil {
-      height: auto;
+      height: 621px;
       width: 520px; } }
 
 .perfil {
-  justify-content: center; }
-  @media screen and (min-width: 576px) {
+  padding-left: 0px; }
+  @media screen and (min-width: 450px) {
     .perfil {
-      justify-content: left;
-      padding-left: 0px; } }
-  @media screen and (min-width: 768px) {
-    .perfil {
-      justify-content: left;
-      padding-left: 0px; } }
-  @media screen and (min-width: 992px) {
-    .perfil {
-      justify-content: right;
-      padding-right: 0px; } }
+      justify-content: center; } }
 
 .visible {
   display: none; }
-  @media screen and (min-width: 726px) {
+  @media screen and (min-width: 576px) {
     .visible {
       display: block; } }
 
 .gridConteiner {
-  padding-top: 0;
+  padding-top: 1.5rem;
   display: grid;
-  grid-template-columns: 100%;
   background-color: #d4bba6;
-  grid-template-areas: "covidTitulo " "item0" "fotoPerfil" "item1" "item2" "item3"; }
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "covidTitulo covidTitulo" "item1 fotoPerfil" "item2 fotoPerfil" "item3 item3"; }
   @media only screen and (min-width: 576px) {
     .gridConteiner {
-      padding-top: 3rem;
+      padding-top: 2rem;
       grid-template-columns: 50% 50%;
-      grid-template-areas: "covidTitulo covidTitulo" "item1 fotoPerfil" "item2 fotoPerfil" "item3 item3"; } }
-  @media only screen and (min-width: 1200px) {
+      grid-template-areas: "covidTitulo covidTitulo" "fotoPerfil item1" "fotoPerfil item2" "fotoPerfil item3"; } }
+  @media only screen and (min-width: 768px) {
     .gridConteiner {
-      padding-top: 3rem;
+      padding-top: 5rem;
       grid-template-columns: 50% 50%;
       grid-template-areas: "fotoPerfil covidTitulo" "fotoPerfil item0" "fotoPerfil item1" "fotoPerfil item2" "fotoPerfil item3"; } }
   .gridConteiner .textoCovid {
     flex-grow: 2; }
   .gridConteiner h2 {
     font-family: Frank Ruhl Libre;
-    font-size: 2rem;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.099em;
     color: #595351;
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem; }
+    margin-top: 1rem;
+    margin-bottom: 1.2rem; }
+    @media only screen and (min-width: 576px) {
+      .gridConteiner h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem; } }
     @media only screen and (min-width: 768px) {
       .gridConteiner h2 {
-        font-size: 4rem;
+        text-align: start;
+        font-size: 3rem;
         line-height: 62px;
-        margin-top: 2.5rem; } }
-    @media only screen and (min-width: 1200px) {
-      .gridConteiner h2 {
-        text-align: left; } }
+        margin-top: 0rem;
+        margin-bottom: 0rem; } }
   .gridConteiner p {
     font-family: Poppins;
-    font-size: 1.2rem;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.1em;
-    line-height: 2rem;
+    line-height: 18px;
     text-align: left;
     margin: 0; }
     @media only screen and (min-width: 768px) {
       .gridConteiner p {
-        font-size: 1.6rem;
-        line-height: 39px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         letter-spacing: 0.1em; } }
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 1200px) {
       .gridConteiner p {
-        line-height: 3rem; } }
+        font-size: 25px;
+        line-height: 3rem;
+        letter-spacing: 0.034em; } }
   .gridConteiner ul {
-    margin: 1rem 1rem 0 1rem;
-    list-style-image: url(../media/checked.png); }
+    margin: 0px;
+    list-style-image: url(../media/checked_mini.png); }
     @media only screen and (min-width: 768px) {
       .gridConteiner ul {
-        margin: 1rem 1rem 0 3rem; } }
-    @media only screen and (min-width: 1200px) {
-      .gridConteiner ul {
-        margin: 1rem 1rem 0 0rem; } }
+        list-style-image: url(../media/checked.png); } }
+  @media only screen and (min-width: 1200px) {
+    .gridConteiner li {
+      margin: 1rem 1rem 0 0rem; } }
 
 .foto_perfil2 {
-  height: auto;
-  width: 300px;
-  border-radius: 2rem;
-  border: solid 2px #f6eee2; }
+  height: 162.91;
+  width: 145.7px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-image: url("../media/fondo_imagen_covid.png");
+  background-repeat: no-repeat;
+  background-size: 145.7px 162.91px; }
+  @media screen and (min-width: 576px) {
+    .foto_perfil2 {
+      padding-top: 18px;
+      padding-left: 18px;
+      height: 261px;
+      width: 220px;
+      background-size: 220px 261px; } }
   @media screen and (min-width: 768px) {
     .foto_perfil2 {
-      height: 450px;
-      width: 370px; } }
+      padding-top: 30px;
+      padding-left: 30px;
+      height: 421px;
+      width: 360px;
+      background-size: 360px 421px; } }
+  @media screen and (min-width: 992px) {
+    .foto_perfil2 {
+      height: 471px;
+      width: 370px;
+      background-size: 370px 471px; } }
   @media screen and (min-width: 1200px) {
     .foto_perfil2 {
-      height: 600px;
-      width: 520px; } }
+      height: 621px;
+      width: 520px;
+      background-size: 520px 621px; } }
 
 .perfil2 {
-  height: 380px;
+  height: 183px;
   justify-content: center;
   display: flex;
   align-items: center; }
+  @media screen and (min-width: 576px) {
+    .perfil2 {
+      min-height: 265px;
+      height: auto; } }
   @media screen and (min-width: 768px) {
     .perfil2 {
-      min-height: 450px;
+      min-height: 430px;
+      height: auto; } }
+  @media screen and (min-width: 992px) {
+    .perfil2 {
+      min-height: 481px;
       height: auto; } }
   @media screen and (min-width: 1200px) {
     .perfil2 {
-      min-height: 600px;
+      min-height: 630px;
       height: auto; } }
 
 .item1 {
   grid-area: item1;
-  display: flex;
-  align-items: center; }
+  display: flex; }
 
 .item2 {
   grid-area: item2;
-  display: flex;
-  align-items: center; }
+  display: flex; }
 
 .item3 {
   grid-area: item3;
-  display: flex;
-  align-items: center; }
+  display: flex; }
 
 .covidTitulo {
   grid-area: covidTitulo; }
@@ -337,12 +428,36 @@ nav {
 
 .visible_covid {
   display: none; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     .visible_covid {
       display: block; } }
 
 #promociones {
   background: linear-gradient(170deg, #d4bba6 50%, #dec9b9 50%); }
+  @media only screen and (min-width: 576px) {
+    #promociones {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (min-width: 640px) {
+    #promociones {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media only screen and (min-width: 992px) {
+    #promociones {
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+#splidePromo {
+  display: block; }
+  @media only screen and (min-width: 1200px) {
+    #splidePromo {
+      display: none; } }
+
+#tarjetasPromo {
+  display: none; }
+  @media only screen and (min-width: 1200px) {
+    #tarjetasPromo {
+      display: block; } }
 
 .promos {
   border-radius: 10px;
@@ -350,27 +465,33 @@ nav {
 
 .promos h3 {
   font-family: Frank Ruhl Libre;
-  font-size: 2rem;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 26px;
   letter-spacing: 0.099em;
   color: #595351;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
+  margin-top: 1.5rem;
+  margin-bottom: 1rem; }
+  @media only screen and (min-width: 576px) {
+    .promos h3 {
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 768px) {
     .promos h3 {
-      font-size: 4rem;
-      line-height: 62px;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      font-size: 3rem;
       margin-top: 2.5rem; } }
   @media only screen and (min-width: 1200px) {
     .promos h3 {
-      text-align: left; } }
+      text-align: left;
+      font-size: 4rem;
+      line-height: 62px; } }
 
 .promos p {
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
@@ -383,14 +504,21 @@ nav {
       letter-spacing: 0.1em; } }
 
 .cardsPromo {
-  background-color: #d1af8f;
+  background-color: #6e8565;
   border-radius: 10px;
-  color: white; }
+  color: white;
+  max-width: 30rem; }
   .cardsPromo h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left; }
+    @media only screen and (min-width: 768px) {
+      .cardsPromo h5 {
+        font-size: 2rem; } }
   .cardsPromo p {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
+    @media only screen and (min-width: 768px) {
+      .cardsPromo p {
+        font-size: 1.2rem; } }
 
 #contacto {
   background-color: #dec9b9;
@@ -398,37 +526,238 @@ nav {
   padding-top: 0px; }
   #contacto h3 {
     font-family: Frank Ruhl Libre;
-    font-size: 2rem;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 26px;
     letter-spacing: 0.099em;
     color: #595351;
     margin-bottom: 2rem; }
+    @media only screen and (min-width: 576px) {
+      #contacto h3 {
+        font-size: 1.8rem; } }
     @media only screen and (min-width: 768px) {
+      #contacto h3 {
+        font-size: 3rem; } }
+    @media only screen and (min-width: 1200px) {
       #contacto h3 {
         font-size: 4rem;
         line-height: 62px; } }
-  #contacto p {
+  #contacto a {
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 21px;
     letter-spacing: 0.1em;
-    text-align: left; }
+    text-align: center; }
     @media only screen and (min-width: 768px) {
-      #contacto p {
-        font-size: 1.6rem;
-        line-height: 39px;
+      #contacto a {
+        font-size: 16px;
+        line-height: 27px;
         letter-spacing: 0.1em; } }
+    @media only screen and (min-width: 996px) {
+      #contacto a {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.1em; } }
+    @media only screen and (min-width: 1200px) {
+      #contacto a {
+        font-size: 25px;
+        line-height: 37px;
+        letter-spacing: 0.1em; } }
+  #contacto h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px; }
+    @media only screen and (min-width: 450px) {
+      #contacto h5 {
+        font-size: 13px;
+        line-height: 19px; } }
+    @media only screen and (min-width: 576px) {
+      #contacto h5 {
+        font-size: 17px;
+        line-height: 23px; } }
+    @media only screen and (min-width: 768px) {
+      #contacto h5 {
+        font-size: 20px;
+        line-height: 27px; } }
+    @media only screen and (min-width: 992px) {
+      #contacto h5 {
+        font-size: 23px;
+        line-height: 31px; } }
+    @media only screen and (min-width: 1200px) {
+      #contacto h5 {
+        font-size: 25px;
+        line-height: 37px; } }
   #contacto li {
     list-style: none; }
 
+@media only screen and (min-width: 768px) {
+  .botonWp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
 .botonCita {
   background-color: #f6eee2;
-  border-radius: 10px; }
+  border-radius: 10px;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-content: center; }
+  @media only screen and (min-width: 667px) {
+    .botonCita {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center; } }
+
+.imgWp {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+  margin-right: 0.5rem; }
 
 .mapa {
-  height: 50vh;
-  border-radius: 25px; }
+  padding: 2rem 1.2rem 0.2rem 1.2rem;
+  background: #dec9b9;
+  height: 25vh; }
+  @media only screen and (min-width: 450px) {
+    .mapa {
+      height: 32vh; } }
+  @media only screen and (min-width: 576px) {
+    .mapa {
+      height: 40vh; } }
+  @media only screen and (min-width: 768px) {
+    .mapa {
+      padding: 2rem 2rem 1rem 2rem;
+      height: 48vh; } }
+  @media only screen and (min-width: 992px) {
+    .mapa {
+      padding: 2rem 3rem 1rem 3rem;
+      height: 70vh; } }
+  .mapa iframe {
+    border-radius: 1.2rem; }
+
+.links {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+  .links img {
+    height: 30px;
+    width: 30px;
+    margin-left: 1rem;
+    margin-right: 2.8rem;
+    background: white; }
+    @media only screen and (min-width: 576px) {
+      .links img {
+        height: 40px;
+        width: 40px; } }
+    @media only screen and (min-width: 768px) {
+      .links img {
+        height: 50px;
+        width: 50px; } }
+    @media only screen and (min-width: 992px) {
+      .links img {
+        height: 60px;
+        width: 60px; } }
+
+.modalFormat {
+  background-color: #f6eee2;
+  padding: 3rem 2rem; }
+
+.modal_title {
+  font-family: Frank Ruhl Libre;
+  text-align: left;
+  color: #595351;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.035em; }
+  @media only screen and (min-width: 768px) {
+    .modal_title {
+      font-size: 42px;
+      line-height: 45px; } }
+  @media only screen and (min-width: 992px) {
+    .modal_title {
+      font-size: 50px;
+      line-height: 65px; } }
+
+.modal_price {
+  font-family: Poppins;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #595351; }
+  @media only screen and (min-width: 768px) {
+    .modal_price {
+      font-size: 24px;
+      line-height: 40px; } }
+  @media only screen and (min-width: 992px) {
+    .modal_price {
+      font-size: 36px;
+      line-height: 54px; } }
+
+.modal_text {
+  font-family: Poppins;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.095em;
+  color: #555555;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+  @media only screen and (min-width: 768px) {
+    .modal_text {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 14px;
+      line-height: 24px; } }
+  @media only screen and (min-width: 992px) {
+    .modal_text {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-size: 18px;
+      line-height: 28px; } }
+
+.modal_duration {
+  font-family: Poppins;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #595351; }
+  @media only screen and (min-width: 768px) {
+    .modal_duration {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media only screen and (min-width: 992px) {
+    .modal_duration {
+      font-size: 18px;
+      line-height: 27px; } }
+
+.modal_button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  color: #000000;
+  background: #e1d1c2;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 28px; }
+
+.modal_img {
+  height: 30px;
+  width: 30px; }

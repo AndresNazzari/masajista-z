@@ -1,10 +1,10 @@
 .sobreRodrigo {
   background-color: $paleta1;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   margin-bottom: 1rem;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 3rem;
+    // margin-top: 3rem;
     margin-bottom: 2rem;
   }
 
@@ -14,49 +14,77 @@
 
   h2 {
     font-family: Frank Ruhl Libre;
-    font-size: 2rem;
+    // font-size: 2rem;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px;
+    // line-height: 16px;
+    line-height: 24px;
     letter-spacing: 0.099em;
+    position: absolute;
+    top: 38%;
     color: #595351;
-    text-align: center;
+    text-align: left;
     margin-top: 1.5rem;
+
+    @media only screen and (min-width: 450px) {
+      top: 40%;
+    }
+
+    @media only screen and (min-width: 576px) {
+      position: static;
+      top: 0%;
+      font-size: 1.8rem;
+    }
 
     @media only screen and (min-width: 768px) {
       font-size: 3rem;
       line-height: 62px;
-      margin-top: 0;
+      margin-top: 5;
     }
 
     @media only screen and (min-width: 1024px) {
-      font-size: 4rem;
-
+      font-size: 3rem;
+      margin-top: 3rem;
     }
   }
 
   p {
     font-family: Poppins;
-    font-size: 1rem;
+    // font-size: 1rem;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 1.5rem;
+    // line-height: 1.5rem;
+    line-height: 16px;
     letter-spacing: 0.1em;
-    text-align: center;
+    text-align: start;
+    position: absolute;
+    top: 44%;
     padding-right: 0.5rem;
     margin-bottom: 0;
+
+    @media only screen and (min-width: 450px) {
+      top: 46%;
+    }
+
+    @media only screen and (min-width: 576px) {
+      position: static;
+      top: 0%;
+      padding-bottom: 0.5rem;
+    }
 
     @media only screen and (min-width: 768px) {
       font-size: 1rem;
       line-height: 1.5rem;
       letter-spacing: 0.1em;
-      text-align: start;
-
+      padding-bottom: 0.5rem;
     }
 
     @media only screen and (min-width: 1024px) {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.7rem;
       letter-spacing: 0.1em;
+      padding-bottom: 1rem;
     }
 
     @media only screen and (min-width: 1200px) {
@@ -68,47 +96,64 @@
 }
 
 .foto_perfil {
-  height: auto;
-  width: 300px;
-  padding-top: 30px;
-  padding-left: 30px;
-  background: $paleta3;
+  height: 162.91;
+  width: 145.7px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: linear-gradient(180deg, $paleta3 90%, $paleta1 90%);
+
+  @media screen and (min-width: 576px) {
+    padding-top: 18px;
+    padding-left: 18px;
+    height: 261px;
+    width: 220px;
+  }
 
   @media screen and (min-width: 768px) {
-    height: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    height: 421px;
+    width: 360px;
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 471px;
     width: 370px;
   }
 
   @media screen and (min-width: 1200px) {
-    height: auto;
+    height: 621px;
     width: 520px;
   }
 }
 
 .perfil {
-  justify-content: center;
+  padding-left: 0px;
 
-  @media screen and (min-width: 576px) {
-    justify-content: left;
-    padding-left: 0px;
+  @media screen and (min-width: 450px) {
+    justify-content: center;
   }
 
-  @media screen and (min-width: 768px) {
-    justify-content: left;
-    padding-left: 0px;
-  }
+  // @media screen and (min-width: 576px) {
+  //   justify-content: left;
+  //   padding-left: 0px;
+  // }
 
-  @media screen and (min-width: 992px) {
-    justify-content: right;
-    padding-right: 0px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   justify-content: left;
+  //   padding-left: 0px;
+  // }
 
+  // @media screen and (min-width: 992px) {
+  //   justify-content: right;
+  //   padding-right: 0px;
+  // }
 }
 
 .visible {
   display: none;
 
-  @media screen and (min-width: 726px) {
+  @media screen and (min-width: 576px) {
     display: block;
   }
 }

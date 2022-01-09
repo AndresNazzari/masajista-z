@@ -1,6 +1,44 @@
 #promociones {
-  // background-color: $paleta3;
   background: linear-gradient(170deg, $paleta3 50%, $paleta2 50%);
+
+  @media only screen and (min-width: 576px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media only screen and (min-width: 640px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+#splidePromo {
+  // visibility: visible;
+  display: block;
+
+  @media only screen and (min-width: 1200px) {
+    // visibility: hidden;
+    // height: 0px;
+    display: none;
+  }
+}
+
+#tarjetasPromo {
+  // visibility: hidden;
+  // height: 0px;
+  display: none;
+
+  @media only screen and (min-width: 1200px) {
+    // visibility: visible;
+    display: block;
+    // height: 100%;
+    // width: 90vw;
+  }
 }
 
 .promos {
@@ -10,29 +48,37 @@
 
 .promos h3 {
   font-family: Frank Ruhl Libre;
-  font-size: 2rem;
+  // font-size: 2rem;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 26px;
   letter-spacing: 0.099em;
   color: #595351;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: 576px) {
+    font-size: 1.8rem;
+  }
 
   @media only screen and (min-width: 768px) {
-    font-size: 4rem;
-    line-height: 62px;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
     margin-top: 2.5rem;
   }
   @media only screen and (min-width: 1200px) {
     text-align: left;
+    font-size: 4rem;
+    line-height: 62px;
   }
 }
 
 .promos p {
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
@@ -47,14 +93,21 @@
 }
 
 .cardsPromo {
-  background-color: $paleta4;
+  background-color: #6e8565;
   border-radius: 10px;
   color: white;
+  max-width: 30rem;
   h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
+    @media only screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    @media only screen and (min-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 }
