@@ -2,10 +2,10 @@
   background-color: $paleta2;
   margin-top: 0px;
   padding-top: 0px;
+
   h3 {
     font-family: Frank Ruhl Libre;
-    // font-size: 2rem;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     // line-height: 16px;
@@ -17,6 +17,7 @@
     @media only screen and (min-width: 576px) {
       font-size: 1.8rem;
     }
+
     @media only screen and (min-width: 768px) {
       font-size: 3rem;
     }
@@ -26,6 +27,7 @@
       line-height: 62px;
     }
   }
+
   a {
     font-family: Poppins;
     font-size: 14px;
@@ -53,6 +55,7 @@
       letter-spacing: 0.1em;
     }
   }
+
   h5 {
     font-family: Poppins;
     font-style: normal;
@@ -85,6 +88,7 @@
       line-height: 37px;
     }
   }
+
   li {
     list-style: none;
   }

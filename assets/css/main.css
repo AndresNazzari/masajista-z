@@ -75,13 +75,10 @@ nav {
   font-family: Frank Ruhl Libre;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   margin-top: 2rem;
   letter-spacing: 0.079em;
   color: #595351; }
-  @media only screen and (min-width: 576px) {
-    .tratamientos__titulo {
-      font-size: 1.8rem; } }
   @media only screen and (min-width: 768px) {
     .tratamientos__titulo {
       font-size: 3rem;
@@ -97,7 +94,8 @@ nav {
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 0.034em;
-  color: #524f4e; }
+  color: #524f4e;
+  margin-top: 1.5rem; }
   @media only screen and (min-width: 768px) {
     .tratamientos__subTitulo {
       font-size: 1.5rem;
@@ -182,7 +180,7 @@ nav {
     flex-grow: 2; }
   .sobreRodrigo h2 {
     font-family: Frank Ruhl Libre;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
@@ -290,7 +288,7 @@ nav {
   display: grid;
   background-color: #d4bba6;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "covidTitulo covidTitulo" "item1 fotoPerfil" "item2 fotoPerfil" "item3 item3"; }
+  grid-template-areas: "covidTitulo covidTitulo" "item1 fotoPerfil" "item2 fotoPerfil" "item3 item3"; }
   @media only screen and (min-width: 576px) {
     .gridConteiner {
       padding-top: 2rem;
@@ -305,7 +303,7 @@ nav {
     flex-grow: 2; }
   .gridConteiner h2 {
     font-family: Frank Ruhl Libre;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
@@ -316,7 +314,6 @@ nav {
     margin-bottom: 1.2rem; }
     @media only screen and (min-width: 576px) {
       .gridConteiner h2 {
-        font-size: 1.8rem;
         margin-bottom: 2.5rem; } }
     @media only screen and (min-width: 768px) {
       .gridConteiner h2 {
@@ -466,7 +463,7 @@ nav {
 
 .promos h3 {
   font-family: Frank Ruhl Libre;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
@@ -475,9 +472,6 @@ nav {
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 1rem; }
-  @media only screen and (min-width: 576px) {
-    .promos h3 {
-      font-size: 1.8rem; } }
   @media only screen and (min-width: 768px) {
     .promos h3 {
       margin-top: 3rem;
@@ -527,7 +521,7 @@ nav {
   padding-top: 0px; }
   #contacto h3 {
     font-family: Frank Ruhl Libre;
-    font-size: 20px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
