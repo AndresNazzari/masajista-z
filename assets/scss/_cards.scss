@@ -24,13 +24,17 @@
 }
 
 .tratamientos__subTitulo {
-  font-family: Nunito;
+
+  font-family: Poppins;
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 600;
-  font-size: 0.8rem;
-  letter-spacing: 0.034em;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
   color: #524f4e;
   margin-top: 1.5rem;
+
+
 
   @media only screen and (min-width: 768px) {
     font-size: 1.5rem;

@@ -89,11 +89,12 @@ nav {
       font-size: 4rem; } }
 
 .tratamientos__subTitulo {
-  font-family: Nunito;
+  font-family: Poppins;
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 600;
-  font-size: 0.8rem;
-  letter-spacing: 0.034em;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
   color: #524f4e;
   margin-top: 1.5rem; }
   @media only screen and (min-width: 768px) {
@@ -180,16 +181,15 @@ nav {
     flex-grow: 2; }
   .sobreRodrigo h2 {
     font-family: Frank Ruhl Libre;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
     letter-spacing: 0.099em;
     position: absolute;
-    top: 38%;
     color: #595351;
     text-align: left;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    margin-bottom: 1rem !important; }
     @media only screen and (min-width: 450px) {
       .sobreRodrigo h2 {
         top: 40%; } }
@@ -215,7 +215,7 @@ nav {
     letter-spacing: 0.1em;
     text-align: start;
     position: absolute;
-    top: 44%;
+    top: 45%;
     padding-right: 0.5rem;
     margin-bottom: 0; }
     @media only screen and (min-width: 450px) {
@@ -306,7 +306,6 @@ nav {
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px;
     letter-spacing: 0.099em;
     color: #595351;
     text-align: center;
@@ -486,7 +485,7 @@ nav {
 
 .promos p {
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
