@@ -3,13 +3,14 @@
 const modal = document.getElementsByClassName("modalTrat")
 
 for (const element of modal) {
-    element.addEventListener ("click", e => {
+    element.addEventListener("click", e => {
         e.preventDefault();
         crear_modal(element.id)
-})}
+    })
+}
 
 
-function crear_modal (id) {
+function crear_modal(id) {
     const modal_tratamientos = document.getElementById("modal_tratamientos")
 
     let titulo, precio, texto, duracion;
@@ -66,7 +67,9 @@ function crear_modal (id) {
         default:
             break;
     }
-    
+
+    // 
+    //     
     modal_tratamientos.innerHTML = ""
     modal_tratamientos.innerHTML = `<div class="modal-content modal-header card modalFormat d-flex justify-content-center mt-0">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -77,7 +80,9 @@ function crear_modal (id) {
                                             <h4 class="modal_duration">Duracion: ${duracion} minutos</h4>
                                             <div class="text-center pt-3">
                                                 <img src="./assets/media/whatsapp_2.png" class="modal_img" alt="">
-                                                <a class="btn modal_button" type="button" href="#">Pedir Cita</a>
+                                                <a class="btn modal_button" type="button"
+                                                href="https://wa.me/34685545606?text=Hola!%20Me%20gustaría%20recibir%20más%20
+                                                infrmación%20sobre%20${titulo === "Sesión de masajes" ? "la" : "el"}%20'${titulo}'" target="_blank">Pedir Cita</a>
                                             </div>
                                         </div>
                                     </div>`
