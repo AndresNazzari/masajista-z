@@ -69,6 +69,7 @@
     font-size: 3rem;
     margin-top: 2.5rem;
   }
+
   @media only screen and (min-width: 1200px) {
     text-align: left;
     font-size: 4rem;
@@ -97,15 +98,19 @@
   border-radius: 10px;
   color: white;
   max-width: 30rem;
+
   h5 {
     font-size: 1.5rem;
     text-align: left;
+
     @media only screen and (min-width: 768px) {
       font-size: 2rem;
     }
   }
+
   p {
     font-size: 1rem;
+
     @media only screen and (min-width: 768px) {
       font-size: 1.2rem;
     }

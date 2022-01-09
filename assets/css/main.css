@@ -116,7 +116,8 @@ nav {
 
 #tarjetasNormales {
   visibility: hidden;
-  height: 0px; }
+  height: 0px;
+  overflow: hidden; }
   @media only screen and (min-width: 768px) {
     #tarjetasNormales {
       visibility: visible;

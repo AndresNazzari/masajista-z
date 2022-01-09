@@ -82,7 +82,7 @@ function crear_modal(id) {
                                                 <img src="./assets/media/whatsapp_2.png" class="modal_img" alt="">
                                                 <a class="btn modal_button" type="button"
                                                 href="https://wa.me/34685545606?text=Hola!%20Me%20gustaría%20recibir%20más%20
-                                                infrmación%20sobre%20${titulo === "Sesión de masajes" ? "la" : "el"}%20'${titulo}'" target="_blank">Pedir Cita</a>
+                                                información%20sobre%20${titulo === "Sesión de masajes" ? "la" : "el"}%20'${titulo}'" target="_blank">Pedir Cita</a>
                                             </div>
                                         </div>
                                     </div>`
