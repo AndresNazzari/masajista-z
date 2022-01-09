@@ -2,6 +2,4 @@
 
 FALTA
 
-- hacer el SEO
-- hacer los alt
-- linkear los links a wp, mail, etc
+
