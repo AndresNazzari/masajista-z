@@ -21,9 +21,22 @@ nav {
   letter-spacing: 0em; }
   nav a {
     color: black !important; }
+  @media only screen and (min-width: 375px) {
+    nav div {
+      margin-left: 1rem !important; } }
+  @media only screen and (min-width: 768px) {
+    nav div {
+      margin-left: 3rem !important; } }
 
 .navbar-brand img {
   width: 2rem; }
+
+#logoNav {
+  width: 75px !important;
+  margin-top: 1rem; }
+  @media only screen and (min-width: 768px) {
+    #logoNav {
+      margin-top: 0rem; } }
 
 .heroe {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/portada_desktop.jpg");
