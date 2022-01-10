@@ -1,6 +1,6 @@
 .sobreRodrigo {
   background-color: $paleta1;
-  // margin-top: 2rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 
   @media only screen and (min-width: 768px) {
@@ -9,7 +9,32 @@
   }
 
   .textoRodrigo {
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+  .visible_desk {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .visible_mob {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 
   h2 {
@@ -18,19 +43,19 @@
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.099em;
-    position: absolute;
+    // position: absolute;
     color: #595351;
     text-align: left;
     margin-top: 1.5rem;
     margin-bottom: 1rem !important;
 
     @media only screen and (min-width: 450px) {
-      top: 40%;
+      // top: 40%;
     }
 
     @media only screen and (min-width: 576px) {
-      position: static;
-      top: 0%;
+      // position: static;
+      // top: 0%;
       font-size: 1.8rem;
     }
 
@@ -50,32 +75,32 @@
     font-family: Poppins;
     color: $paleta6;
     // font-size: 1rem;
-    font-size: 10px;
+    font-size: 0.75rem;
     font-weight: 400;
     // line-height: 1.5rem;
     line-height: 16px;
     letter-spacing: 0.1em;
     text-align: start;
-    position: absolute;
-    top: 45%;
+    // position: absolute;
+    // top: 45%;
     padding-right: 0.5rem;
     margin-bottom: 0;
-
-    @media only screen and (min-width: 450px) {
-      top: 46%;
-    }
-
-    @media only screen and (min-width: 576px) {
-      position: static;
-      top: 0%;
-      padding-bottom: 0.5rem;
-    }
+    text-align: center;
+    // @media only screen and (min-width: 450px) {
+    //   top: 46%;
+    // }
+    // @media only screen and (min-width: 576px) {
+    //   position: static;
+    //   top: 0%;
+    //   padding-bottom: 0.5rem;
+    // }
 
     @media only screen and (min-width: 768px) {
       font-size: 1rem;
       line-height: 1.5rem;
       letter-spacing: 0.1em;
       padding-bottom: 0.5rem;
+      text-align: start;
     }
 
     @media only screen and (min-width: 1024px) {
@@ -94,8 +119,8 @@
 }
 
 .foto_perfil {
-  height: 162.91;
-  width: 145.7px;
+  height: auto;
+  width: 230px;
   padding-top: 10px;
   padding-left: 10px;
   background: linear-gradient(180deg, $paleta3 90%, $paleta1 90%);
@@ -103,43 +128,36 @@
   @media screen and (min-width: 576px) {
     padding-top: 18px;
     padding-left: 18px;
-    height: 261px;
-    width: 220px;
+    height: auto;
+    width: 270px;
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 30px;
     padding-left: 30px;
-    height: 421px;
-    width: 360px;
+    height: auto;
+    width: 380px;
   }
 
   @media screen and (min-width: 992px) {
-    height: 471px;
+    height: auto;
     width: 370px;
   }
 
   @media screen and (min-width: 1200px) {
-    height: 621px;
+    height: auto;
     width: 520px;
   }
 }
 
 .perfil {
   padding-left: 0px;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-bottom: 2rem;
 
   @media screen and (min-width: 450px) {
     justify-content: center;
 
 
-  }
-}
-
-.visible {
-  display: none;
-
-  @media screen and (min-width: 576px) {
-    display: block;
   }
 }

@@ -173,30 +173,41 @@ nav {
 
 .sobreRodrigo {
   background-color: #f6dfce;
+  margin-top: 2rem;
   margin-bottom: 1rem; }
   @media only screen and (min-width: 768px) {
     .sobreRodrigo {
       margin-bottom: 2rem; } }
   .sobreRodrigo .textoRodrigo {
-    flex-grow: 2; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sobreRodrigo .textoRodrigo div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  .sobreRodrigo .visible_desk {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .sobreRodrigo .visible_desk {
+        display: block; } }
+  .sobreRodrigo .visible_mob {
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .sobreRodrigo .visible_mob {
+        display: none; } }
   .sobreRodrigo h2 {
     font-family: Frank Ruhl Libre;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.099em;
-    position: absolute;
     color: #595351;
     text-align: left;
     margin-top: 1.5rem;
     margin-bottom: 1rem !important; }
-    @media only screen and (min-width: 450px) {
-      .sobreRodrigo h2 {
-        top: 40%; } }
     @media only screen and (min-width: 576px) {
       .sobreRodrigo h2 {
-        position: static;
-        top: 0%;
         font-size: 1.8rem; } }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo h2 {
@@ -210,29 +221,21 @@ nav {
   .sobreRodrigo p {
     font-family: Poppins;
     color: #636363;
-    font-size: 10px;
+    font-size: 0.75rem;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.1em;
     text-align: start;
-    position: absolute;
-    top: 45%;
     padding-right: 0.5rem;
-    margin-bottom: 0; }
-    @media only screen and (min-width: 450px) {
-      .sobreRodrigo p {
-        top: 46%; } }
-    @media only screen and (min-width: 576px) {
-      .sobreRodrigo p {
-        position: static;
-        top: 0%;
-        padding-bottom: 0.5rem; } }
+    margin-bottom: 0;
+    text-align: center; }
     @media only screen and (min-width: 768px) {
       .sobreRodrigo p {
         font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: 0.1em;
-        padding-bottom: 0.5rem; } }
+        padding-bottom: 0.5rem;
+        text-align: start; } }
     @media only screen and (min-width: 1024px) {
       .sobreRodrigo p {
         font-size: 1rem;
@@ -246,8 +249,8 @@ nav {
         letter-spacing: 0.1em; } }
 
 .foto_perfil {
-  height: 162.91;
-  width: 145.7px;
+  height: auto;
+  width: 230px;
   padding-top: 10px;
   padding-left: 10px;
   background: linear-gradient(180deg, #d4bba6 90%, #f6dfce 90%); }
@@ -255,35 +258,30 @@ nav {
     .foto_perfil {
       padding-top: 18px;
       padding-left: 18px;
-      height: 261px;
-      width: 220px; } }
+      height: auto;
+      width: 270px; } }
   @media screen and (min-width: 768px) {
     .foto_perfil {
       padding-top: 30px;
       padding-left: 30px;
-      height: 421px;
-      width: 360px; } }
+      height: auto;
+      width: 380px; } }
   @media screen and (min-width: 992px) {
     .foto_perfil {
-      height: 471px;
+      height: auto;
       width: 370px; } }
   @media screen and (min-width: 1200px) {
     .foto_perfil {
-      height: 621px;
+      height: auto;
       width: 520px; } }
 
 .perfil {
   padding-left: 0px;
-  justify-content: flex-end; }
+  justify-content: center;
+  margin-bottom: 2rem; }
   @media screen and (min-width: 450px) {
     .perfil {
       justify-content: center; } }
-
-.visible {
-  display: none; }
-  @media screen and (min-width: 576px) {
-    .visible {
-      display: block; } }
 
 .gridConteiner {
   padding-top: 1.5rem;
