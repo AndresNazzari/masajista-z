@@ -93,6 +93,10 @@
   border-radius: 10px;
   color: white;
   max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
 
   h5 {
     font-size: 1.5rem;
@@ -109,5 +113,28 @@
     @media only screen and (min-width: 768px) {
       font-size: 1.2rem;
     }
+  }
+}
+
+#promo_elegida {
+  position: relative;
+  top: -11.5%;
+  width: 44%;
+  right: -53%;
+
+  @media only screen and (min-width: 375px) {
+    top: -12.5%;
+  }
+
+  @media only screen and (min-width: 425px) {
+    top: -13.5%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    top: -10.5%;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    top: -9.1%;
   }
 }

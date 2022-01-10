@@ -501,7 +501,11 @@ nav {
   background-color: #6e8565;
   border-radius: 10px;
   color: white;
-  max-width: 30rem; }
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%; }
   .cardsPromo h5 {
     font-size: 1.5rem;
     text-align: left; }
@@ -513,6 +517,24 @@ nav {
     @media only screen and (min-width: 768px) {
       .cardsPromo p {
         font-size: 1.2rem; } }
+
+#promo_elegida {
+  position: relative;
+  top: -11.5%;
+  width: 44%;
+  right: -53%; }
+  @media only screen and (min-width: 375px) {
+    #promo_elegida {
+      top: -12.5%; } }
+  @media only screen and (min-width: 425px) {
+    #promo_elegida {
+      top: -13.5%; } }
+  @media only screen and (min-width: 768px) {
+    #promo_elegida {
+      top: -10.5%; } }
+  @media only screen and (min-width: 1440px) {
+    #promo_elegida {
+      top: -9.1%; } }
 
 #contacto {
   background-color: #dec9b9;
