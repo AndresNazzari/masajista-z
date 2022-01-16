@@ -78,7 +78,7 @@ nav {
           line-height: 4rem; } }
       @media only screen and (min-width: 1024px) {
         .heroe .hero-text h1 {
-          font-size: 3.5rem;
+          font-size: 5rem;
           line-height: 4rem; } }
 
 #tratamientos {
@@ -135,6 +135,9 @@ nav {
       visibility: visible;
       height: 100%;
       width: 90vw; } }
+  @media only screen and (min-width: 1920px) {
+    #tarjetasNormales {
+      width: 70vw; } }
 
 .cards {
   background-color: #f6eee2;
@@ -159,10 +162,12 @@ nav {
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-between; } }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1800px) {
     .cards {
-      margin: 2rem;
-      padding: 2rem; } }
+      height: auto;
+      max-height: 600px;
+      width: 400px !important;
+      max-width: 400px !important; } }
 
 .imgTrat {
   order: 2;
@@ -191,10 +196,18 @@ nav {
   @media only screen and (min-width: 768px) {
     .sobreRodrigo {
       margin-bottom: 2rem; } }
+  @media only screen and (min-width: 1500px) {
+    .sobreRodrigo {
+      padding-right: 10rem;
+      padding-left: 5rem; } }
   .sobreRodrigo .textoRodrigo {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (min-width: 768px) {
+      .sobreRodrigo .textoRodrigo {
+        align-items: flex-start;
+        padding-right: 6rem; } }
     .sobreRodrigo .textoRodrigo div {
       display: flex;
       flex-direction: column;
@@ -277,8 +290,8 @@ nav {
     .foto_perfil {
       padding-top: 30px;
       padding-left: 30px;
-      height: auto;
-      width: 380px; } }
+      height: 400px;
+      width: auto; } }
   @media screen and (min-width: 992px) {
     .foto_perfil {
       height: auto;
@@ -292,9 +305,9 @@ nav {
   padding-left: 0px;
   justify-content: center;
   margin-bottom: 2rem; }
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 768px) {
     .perfil {
-      justify-content: center; } }
+      justify-content: flex-end; } }
 
 .gridConteiner {
   padding-top: 1.5rem;
@@ -352,7 +365,8 @@ nav {
       .gridConteiner p {
         font-size: 25px;
         line-height: 3rem;
-        letter-spacing: 0.034em; } }
+        letter-spacing: 0.034em;
+        margin-right: 10rem; } }
   .gridConteiner ul {
     margin: 0px;
     list-style-image: url(../media/checked_mini.png); }
@@ -416,7 +430,8 @@ nav {
   @media screen and (min-width: 1200px) {
     .perfil2 {
       min-height: 630px;
-      height: auto; } }
+      height: auto;
+      margin-right: 8rem; } }
 
 .item1 {
   grid-area: item1;
@@ -517,7 +532,7 @@ nav {
   max-width: 30rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
   height: 80%; }
   .cardsPromo h5 {
     font-size: 1.5rem;
@@ -530,6 +545,9 @@ nav {
     @media only screen and (min-width: 768px) {
       .cardsPromo p {
         font-size: 1.2rem; } }
+
+.promo_elegida {
+  margin-bottom: 2rem; }
 
 #promo_elegida {
   position: relative;

@@ -61,12 +61,10 @@
 
   p {
     font-family: Poppins;
-    // font-size: 1.2rem;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.1em;
-    // line-height: 2rem;
     line-height: 18px;
     text-align: left;
     margin: 0;
@@ -81,6 +79,7 @@
       font-size: 25px;
       line-height: 3rem;
       letter-spacing: 0.034em;
+      margin-right: 10rem;
     }
   }
 
@@ -179,6 +178,7 @@
   @media screen and (min-width: 1200px) {
     min-height: 630px;
     height: auto;
+    margin-right: 8rem;
   }
 }
 
