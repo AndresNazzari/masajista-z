@@ -527,12 +527,13 @@ nav {
 
 .cardsPromo {
   background-color: #6e8565;
+  position: relative;
   border-radius: 10px;
   color: white;
   max-width: 30rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 80%; }
   .cardsPromo h5 {
     font-size: 1.5rem;
@@ -549,23 +550,38 @@ nav {
 .promo_elegida {
   margin-bottom: 2rem; }
 
-#promo_elegida {
+.card_promo_elegida h5 {
+  position: relative; }
+  @media only screen and (min-width: 375px) {
+    .card_promo_elegida h5 {
+      top: -20%; } }
+  @media only screen and (min-width: 1024px) {
+    .card_promo_elegida h5 {
+      top: -25%; } }
+  @media only screen and (min-width: 1440px) {
+    .card_promo_elegida h5 {
+      top: -16%; } }
+  @media only screen and (min-width: 1920px) {
+    .card_promo_elegida h5 {
+      top: -25%; } }
+
+.promo_elegida {
   position: relative;
   top: -11.5%;
   width: 44%;
   right: -53%; }
   @media only screen and (min-width: 375px) {
-    #promo_elegida {
-      top: -12.5%; } }
-  @media only screen and (min-width: 425px) {
-    #promo_elegida {
-      top: -13.5%; } }
+    .promo_elegida {
+      top: -9.5%; } }
   @media only screen and (min-width: 768px) {
-    #promo_elegida {
-      top: -10.5%; } }
+    .promo_elegida {
+      top: -7%; } }
   @media only screen and (min-width: 1440px) {
-    #promo_elegida {
-      top: -9.1%; } }
+    .promo_elegida {
+      top: -8%; } }
+  @media only screen and (min-width: 1920px) {
+    .promo_elegida {
+      top: -8%; } }
 
 #contacto {
   background-color: #dec9b9;
