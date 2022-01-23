@@ -2,6 +2,7 @@
   padding-top: 1.5rem;
   display: grid;
   background-color: $paleta3;
+  column-gap: 1rem;
   grid-template-columns: 50% 50%;
   grid-template-areas:
     "covidTitulo covidTitulo"
